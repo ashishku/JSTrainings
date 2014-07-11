@@ -7,7 +7,7 @@
 
   /*global jsTraining*/
   jsTraining.factory("TrainingsResources", ["$resource", function ($resource) {
-    var url = "api/:training:slide.json";
+    var url = "api/:training/:slide.json";
 
     return $resource(url, {slide: "__info__"}, {
       query: {method: "GET", params: {training: ""}, isArray: true}

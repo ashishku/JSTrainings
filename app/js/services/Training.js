@@ -15,11 +15,11 @@
         $location.url("/training/" +  tId);
       }
       else if (currentSlide === 1) {
-        $location.url("/training/" +  tId + "agenda");
+        $location.url("/training/" +  tId + "/" + "agenda");
       }
       else if(currentSlide < totalSlides) {
         slide = training.slides[currentSlide];
-        $location.url("/training/" +  tId + slide.type + "/" + slide.id);
+        $location.url("/training/" +  tId + "/" + slide.type + "/" + slide.id);
       }
     }
 
@@ -28,7 +28,7 @@
         return !!tId;
       },
       fetchSlide: function(slide) {
-        var i = 0, s;
+        var i, s;
 
         for(i=0; i<training.slides.length; i++) {
           s = training.slides[i];
@@ -42,7 +42,7 @@
       },
       fetchTraining: function(trnId) {
         currentSlide = 0;
-        tId = trnId + "/";
+        tId = trnId;
 
         training = TrainingsResources.get({training: tId});
 

@@ -10,7 +10,7 @@
     var url = "api/:training/:slide.json";
 
     return $resource(url, {slide: "__info__"}, {
-      query: {method: "GET", params: {training: ""}, isArray: true}
+      query: {method: "GET", params: {training: "."}, isArray: true}
     });
   }]);
 })();

@@ -1,0 +1,25 @@
+{
+  "id":          "T001_JavaScript",
+  "title":       "Basics of JavaScript",
+  "by":          "Ashish Kumar",
+  "lastUpdated": "30 June 2014",
+  "description": ["Covers the basic constructs of JavaScript", "OOPs in JavaScript"],
+  "image":       "api/T001_JavaScript/imgs/js.png",
+  "slides":      [
+    {
+      "id":    "JS_001",
+      "type":  "template",
+      "title": "Introduction"
+    },
+    {
+      "id":    "JS_002",
+      "type":  "template",
+      "title": "Lexical Structure"
+    },
+    {
+      "id":    "JS_003",
+      "type":  "template",
+      "title": "Variables and Data Types"
+    }
+  ]
+}

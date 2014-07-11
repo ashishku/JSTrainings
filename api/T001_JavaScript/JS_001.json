@@ -1,0 +1,5 @@
+{
+  "id":       "JS_001",
+  "title":    "Introduction to JavaScript",
+  "template": "api/T001_JavaScript/templates/JS_001.html"
+}

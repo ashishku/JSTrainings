@@ -1,0 +1,13 @@
+{
+  "id":     "__agenda__",
+  "title":  "Agenda",
+  "type":   "agenda",
+  "agenda": [
+    "Introduction to JavaScript",
+    "Statements",
+    "Inbuilt Objects",
+    "OOPs",
+    "Modules",
+    "Browsers"
+  ]
+}

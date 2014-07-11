@@ -1,6 +1,6 @@
 {
   "id":      "JS_004",
-  "title":   "Variable Creation",
+  "title":   "Variables Scope",
   "bullets": [
     [
       "Undeclared Variables",

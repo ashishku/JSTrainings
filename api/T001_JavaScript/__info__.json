@@ -13,13 +13,28 @@
     },
     {
       "id":    "JS_002",
-      "type":  "template",
+      "type":  "bullets",
       "title": "Lexical Structure"
     },
     {
       "id":    "JS_003",
-      "type":  "template",
+      "type":  "subBullets",
       "title": "Variables and Data Types"
+    },
+    {
+      "id":    "JS_004",
+      "type":  "template",
+      "title": "Data Type Conversion Rules"
+    },
+    {
+      "id":    "JS_005",
+      "type":  "bullets",
+      "title": "Creating Variables"
+    },
+    {
+      "id":    "JS_006",
+      "type":  "subBullets",
+      "title": "Variable Scopes"
     }
   ]
 }

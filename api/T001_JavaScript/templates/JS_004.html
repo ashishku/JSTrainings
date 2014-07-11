@@ -1,0 +1,170 @@
+<style>
+  .table-xsm {
+    margin-top: -20px;
+    font-size:  .5em;
+  }
+
+  tr.custom > th,
+  tr.custom > td {
+    background-color: rgba(185, 150, 255, 0.47);
+  }
+</style>
+
+<table class="table table-condensed table-bordered table-xsm">
+  <thead>
+  <tr class="active">
+    <th rowspan="2">Value</th>
+    <th colspan="4">Convert to:</th>
+  </tr>
+  <tr class="active">
+    <th>String</th>
+    <th>Number</th>
+    <th>Boolean</th>
+    <th>Object</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="success">
+    <td>undefined</td>
+    <td>"undefined"</td>
+    <td>NaN</td>
+    <td>false</td>
+    <td><em>throws TypeError</em></td>
+  </tr>
+  <tr class="success">
+    <td>null</td>
+    <td>"null"</td>
+    <td>0</td>
+    <td>false</td>
+    <td><em>throws TypeError</em></td>
+  </tr>
+  <tr class="warning">
+    <td>true</td>
+    <td>"true"</td>
+    <td>1</td>
+    <td> -</td>
+    <td>new Boolean(true)</td>
+  </tr>
+  <tr class="warning">
+    <td>true</td>
+    <td>"true"</td>
+    <td>1</td>
+    <td> -</td>
+    <td>new Boolean(true)</td>
+  </tr>
+  <tr class="danger">
+    <td>""<em>(empty string)</em></td>
+    <td> -</td>
+    <td>0</td>
+    <td>false</td>
+    <td>new String("")</td>
+  </tr>
+  <tr class="danger">
+    <td>"1.2"<em>(nonempty, numeric)</em></td>
+    <td> -</td>
+    <td>1.2</td>
+    <td>true</td>
+    <td>new String("1.2")</td>
+  </tr>
+  <tr class="danger">
+    <td>"one"<em>(nonempty, non-numeric)</em></td>
+    <td> -</td>
+    <td>NaN</td>
+    <td>true</td>
+    <td>new String("one")</td>
+  </tr>
+  <tr class="info">
+    <td>0</td>
+    <td>"0"</td>
+    <td> -</td>
+    <td>false</td>
+    <td>new Number(0)</td>
+  </tr>
+  <tr class="info">
+    <td>-0</td>
+    <td>"0"</td>
+    <td> -</td>
+    <td>false</td>
+    <td>new Number(-0)</td>
+  </tr>
+  <tr class="info">
+    <td>0</td>
+    <td>"0"</td>
+    <td> -</td>
+    <td>false</td>
+    <td>new Number(0)</td>
+  </tr>
+  <tr class="info">
+    <td>NaN</td>
+    <td>"NaN"</td>
+    <td> -</td>
+    <td>false</td>
+    <td>new Number(NaN)</td>
+  </tr>
+  <tr class="info">
+    <td>Infinity</td>
+    <td>"Infinity"</td>
+    <td> -</td>
+    <td>true</td>
+    <td>new Number(Infinity)</td>
+  </tr>
+  <tr class="info">
+    <td>-Infinity</td>
+    <td>"-Infinity"</td>
+    <td> -</td>
+    <td>true</td>
+    <td>new Number(-Infinity)</td>
+  </tr>
+  <tr class="info">
+    <td>1<em>(finite, non-zero)</em></td>
+    <td>"1"</td>
+    <td> -</td>
+    <td>true</td>
+    <td>new Number(1)</td>
+  </tr>
+  <tr class="custom">
+    <td>{}<em>(any object)</em></td>
+    <td><em>Call toString method if defined, if not <br/>
+      call valueOf method and convert return value <br/>
+      to string. If none of these are present raise <br/>
+      TypeError Exception</em></td>
+    <td><em>Call valueOf method if defined, if not <br/>
+      call toString method and convert return value <br/>
+      to number. If none of these are present raise <br/>
+      TypeError Exception</em></td>
+    <td>true</td>
+    <td> -</td>
+  </tr>
+  <tr class="custom">
+    <td>[]<em>(empty array)</em></td>
+    <td>""</td>
+    <td>0</td>
+    <td>true</td>
+    <td> -</td>
+  </tr>
+  <tr class="custom">
+    <td>[9]<em>(single neumric element)</em></td>
+    <td>"9"</td>
+    <td>9</td>
+    <td>true</td>
+    <td> -</td>
+  </tr>
+  <tr class="custom">
+    <td>['a']<em>(any other array)</em></td>
+    <td><em>use join() method</em></td>
+    <td>NaN</td>
+    <td>true</td>
+    <td> -</td>
+  </tr>
+  <tr class="custom">
+    <td>function(() {}<em>(any function)</em></td>
+    <td><em>Call toString method if defined, if not <br/>
+      call valueOf method and convert return value <br/>
+      to string. If none of these are present raise <br/>
+      TypeError Exception</em></td>
+    <td>NaN</td>
+    <td>true</td>
+    <td> -</td>
+  </tr>
+  </tbody>
+</table>

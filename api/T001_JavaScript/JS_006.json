@@ -1,0 +1,21 @@
+{
+  "id":      "JS_004",
+  "title":   "Variable Creation",
+  "bullets": [
+    [
+      "Undeclared Variables",
+      [
+        "ECMA3 ...... global",
+        "ECMA5 ...... error"
+      ]
+    ],
+    [
+      "Declared Variables",
+      [
+        "Global",
+        "Function scope",
+        "Scope chain / Closure scope"
+      ]
+    ]
+  ]
+}

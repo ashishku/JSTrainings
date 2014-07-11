@@ -1,5 +1,24 @@
 {
   "id":       "JS_003",
   "title":    "Variables and Data Types",
-  "template": "api/T001_JavaScript/templates/JS_003.html"
+  "bullets": [
+    [
+      "Immutable / Primitive Types",
+      [
+        "Numbers",
+        "Strings",
+        "Boolean",
+        "undefined",
+        "null"
+      ]
+    ],
+    [
+      "Mutable / Object Types",
+      [
+        "global",
+        "Wrapper",
+        "User defined"
+      ]
+    ]
+  ]
 }

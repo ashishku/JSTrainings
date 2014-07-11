@@ -28,6 +28,16 @@ var jsTraining = (function (angular) {
               controller:   "TemplateCtrl",
               controllerAs: "ctrl"
             })
+      .when("/training/:trnId/bullets/:sldId", {
+              templateUrl:  "app/partials/bulletsSlide.html",
+              controller:   "TemplateCtrl",
+              controllerAs: "ctrl"
+            })
+      .when("/training/:trnId/subBullets/:sldId", {
+              templateUrl:  "app/partials/subBulletsSlide.html",
+              controller:   "TemplateCtrl",
+              controllerAs: "ctrl"
+            })
       .otherwise({
                    redirectTo: "/index"
                  });

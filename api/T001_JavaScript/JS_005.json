@@ -1,0 +1,9 @@
+{
+  "id":      "JS_004",
+  "title":   "Variable Creation",
+  "bullets": [
+    "Declared Variables (using 'var')",
+    "Undeclared Variables",
+    "Repeated Declarations"
+  ]
+}
